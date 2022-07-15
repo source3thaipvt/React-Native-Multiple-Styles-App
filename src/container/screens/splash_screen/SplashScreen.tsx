@@ -5,6 +5,7 @@ import {Image, ImageBackground, View} from 'react-native';
 import {mobileLoadingService} from '../../../components/Loading';
 import images from '../../../res/images';
 import sizes from '../../../res/sizes';
+import AppContainer, {ScreenName} from '../base/AppContainer';
 
 import BaseComponent, {BaseProps, BaseState} from '../base/BaseComponent';
 import NavigationService from '../base/NavigationService';
@@ -38,7 +39,7 @@ export default class SplashScreen extends BaseComponent<Props, State> {
     this._startCountdownTime();
   }
   onFinish = async () => {
-    // NavigationService.navigate()
+    NavigationService.navigate(ScreenName.MULTIPLESTYLESAPP)
   };
   componentWillUnmount = () => {};
 
