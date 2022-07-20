@@ -1095,7 +1095,7 @@ const sizes = new (class {
         : 0
       : 0;
 
-  _header_height = this._statusbar_height + this._56sdp;
+  _header_height = this._statusbar_height + this._32sdp;
   // _header_height = this._56sdp;
   _header_height_running_detail =
     this._statusbar_height + this._56sdp + this._56sdp;

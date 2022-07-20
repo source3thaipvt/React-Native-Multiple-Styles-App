@@ -2,16 +2,19 @@ import {createStackNavigator} from '@react-navigation/stack';
 import {createCompatNavigatorFactory} from '@react-navigation/compat';
 import {createAppContainer, createSwitchNavigator} from 'react-navigation';
 import SplashScreen from '../splash_screen/SplashScreen';
-import MultipleStylesApp from '../multiple_styles_app'
+import MultipleStylesApp from '../multiple_styles_app';
+import ChartWithRNSkia from '../chart_with_rn_skia';
 
 export enum ScreenName {
   SPLASH = 'SplashScreen',
-  MULTIPLESTYLESAPP = 'MultipleStylesApp'
+  MULTIPLESTYLESAPP = 'MultipleStylesApp',
+  CHARTWITHRNSKIA = 'ChartWithRNSkia',
 }
 const AppNavigator = createCompatNavigatorFactory(createStackNavigator)(
   {
     SplashScreen: {screen: SplashScreen},
-    MultipleStylesApp : {screen : MultipleStylesApp}
+    MultipleStylesApp : {screen : MultipleStylesApp},
+    ChartWithRNSkia : {screen : ChartWithRNSkia}
   },
   {
     headerMode: 'none',

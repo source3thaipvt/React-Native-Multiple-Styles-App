@@ -1,3 +1,6 @@
+import colors from "../res/colors";
+import sizes from "../res/sizes";
+
 export const APi_KEY_YOUTUBE = 'AIzaSyCDyCjCuHtGfz1p5pF7pF608y3IoxpZNyQ';
 // thời gian tự động enable button, khi không có response từ socket là 5 giây.
 export const TIME_ENABLE_BUTTON = 5000; // đơn vị ms
@@ -44,3 +47,18 @@ export const ANDROID_PICTURE_MIME_TYPES: string[] = [
 export const DEEP_LINK = {
   APP_LINK: 'pet://',
 };
+export const StylesApp = {
+  container: {
+    width: '100%',
+    height: '100%',
+    // flex: 1,
+    justifyContent: 'center',
+    alignContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#fff',
+  },
+  fontStyles: {
+    fontSize : sizes._14sdp,
+    color: colors._text_black
+  }
+}
