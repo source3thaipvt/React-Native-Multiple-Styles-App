@@ -5,9 +5,6 @@ import sizes from '../../res/sizes'
 import colors from '../../res/colors'
 
 const ItemListApp = (props: any) => {
-
-    console.log(props);
-
     return (
         <TouchableOpacity
 
