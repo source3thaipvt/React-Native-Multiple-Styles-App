@@ -36,7 +36,7 @@ const DataMultiple = [
 const SwitchScreen = (data: any) => {
     switch (data?.screenName) {
         case 'DRAWINGSRNSKIA':
-            NavigationService.navigate(ScreenName.DRAWINGSRNSKIA, data)
+            NavigationService.navigate(ScreenName.DRAWINGSRNSKIA)
             break;
         default:
             break;

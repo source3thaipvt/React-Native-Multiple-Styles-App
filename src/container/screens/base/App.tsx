@@ -8,6 +8,7 @@ import {
   Text,
   DeviceEventEmitter,
   LogBox,
+  View,
 } from 'react-native';
 import { Loading, mobileLoadingService } from '../../../components/Loading';
 import AppContainer from './AppContainer';
@@ -39,15 +40,15 @@ interface Props { }
 
 
 class App extends Component<Props> {
- 
+
   state = {
-    
+
   };
 
- 
+
 
   render() {
-    
+
     return (
 
       <RootView>

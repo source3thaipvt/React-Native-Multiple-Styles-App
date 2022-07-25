@@ -6,7 +6,6 @@ import * as actions from '../../../redux/actions';
 import {ENABLE_BANNER, ShowBanner} from '../../../sdk/AdSdk';
 
 interface Props {
-  setReduxState: (state: Object) => Promise<void>;
   children: any;
   totalMessUnRead?: number;
 }

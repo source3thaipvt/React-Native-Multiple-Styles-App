@@ -51,7 +51,7 @@ export const StylesApp = {
   container: {
     width: '100%',
     height: '100%',
-    // flex: 1,
+    flex: 1,
     justifyContent: 'center',
     alignContent: 'center',
     alignItems: 'center',
