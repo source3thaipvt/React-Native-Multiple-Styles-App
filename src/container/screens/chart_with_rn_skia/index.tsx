@@ -7,6 +7,8 @@ import { ScreenName } from '../base/AppContainer'
 import ItemListApp from '../../component/ItemListApp'
 import sizes from '../../../res/sizes'
 import DrawingsRNSkia from './component/Drawings'
+import HuesRNSkia from './component/Hues'
+
 const DataMultiple = [
     {
         id: '0',
@@ -16,9 +18,9 @@ const DataMultiple = [
     },
     {
         id: '1',
-        title: 'React Native Color',
+        title: 'Hue',
         type: '',
-        screenName: ''
+        screenName: 'HUESRNSKIA'
     },
     {
         id: '2',
@@ -37,6 +39,9 @@ const SwitchScreen = (data: any) => {
     switch (data?.screenName) {
         case 'DRAWINGSRNSKIA':
             NavigationService.navigate(ScreenName.DRAWINGSRNSKIA)
+            break;
+        case 'HUESRNSKIA':
+            NavigationService.navigate(ScreenName.HUESKIARNSKIA)
             break;
         default:
             break;
@@ -63,6 +68,7 @@ export default ChartWithRNSkia
 
 export {
     DrawingsRNSkia,
+    HuesRNSkia
 
 }
 
