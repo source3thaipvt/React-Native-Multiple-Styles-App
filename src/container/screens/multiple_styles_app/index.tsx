@@ -10,32 +10,8 @@ import AppContainer, { ScreenName } from '../base/AppContainer';
 import NavigationService from '../base/NavigationService';
 import { StylesApp } from '../../../common/Constant';
 import ItemListApp from '../../component/ItemListApp';
-const DataMultiple = [
-  {
-    id: '0',
-    title: 'React Native Skia',
-    type: '',
-    screenName: 'CHARTWITHRNSKIA'
-  },
-  {
-    id: '1',
-    title: 'React Native Color',
-    type: '',
-    screenName: ''
-  },
-  {
-    id: '2',
-    title: 'React Native Color',
-    type: '',
-    screenName: ''
-  },
-  {
-    id: '3',
-    title: 'React Native Color',
-    type: '',
-    screenName: ''
-  },
-]
+import { DataMultiple } from './Dummy';
+import PageView from '../../component/PageView';
 const SwitchScreen = (data: any) => {
   switch (data?.screenName) {
     case 'CHARTWITHRNSKIA':
@@ -45,20 +21,18 @@ const SwitchScreen = (data: any) => {
       break;
   }
 }
-
-
 const MultipleStylesApp = (props: any) => {
   const navigation = useNavigation();
   return (
-    <View style={StylesApp.container}>
+    <PageView>
       <HeaderApp style={{ backgroundColor: '#FF4500d9' }} title={'Multiple Styles App'} />
       <FlatList
         data={DataMultiple}
         renderItem={({ item }) => <ItemListApp props={item} onPress={() => { SwitchScreen(item) }} />}
         keyExtractor={item => item.id}
-        style={{ flex: 1, marginTop: sizes._statusbar_height + sizes._header_height, width: sizes._screen_width }}
+        style={{ flex: 1, marginTop: sizes._header_height, width: sizes._screen_width }}
       />
-    </View>
+    </PageView>
   )
 }
 

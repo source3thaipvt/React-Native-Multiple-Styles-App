@@ -12,7 +12,7 @@ const HeaderApp = (props: any) => {
   return (
     <View
       style={{
-        top: sizes._statusbar_height,
+        // top: sizes._statusbar_height,
         position: 'absolute',
         height: sizes._header_height,
         width: '100%',

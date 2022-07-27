@@ -8,7 +8,8 @@ import ItemListApp from '../../component/ItemListApp'
 import sizes from '../../../res/sizes'
 import DrawingsRNSkia from './component/Drawings'
 import HuesRNSkia from './component/Hues'
-
+import StockPointRNSkia from './component/StockPoints'
+import PageView from '../../component/PageView'
 const DataMultiple = [
     {
         id: '0',
@@ -24,9 +25,9 @@ const DataMultiple = [
     },
     {
         id: '2',
-        title: 'React Native Color',
+        title: 'Stock Ponit',
         type: '',
-        screenName: ''
+        screenName: 'STOCKPONIT'
     },
     {
         id: '3',
@@ -38,10 +39,13 @@ const DataMultiple = [
 const SwitchScreen = (data: any) => {
     switch (data?.screenName) {
         case 'DRAWINGSRNSKIA':
-            NavigationService.navigate(ScreenName.DRAWINGSRNSKIA)
+            NavigationService.navigate(ScreenName.DRAWINGSRNSKIA, data)
             break;
         case 'HUESRNSKIA':
-            NavigationService.navigate(ScreenName.HUESKIARNSKIA)
+            NavigationService.navigate(ScreenName.HUESKIARNSKIA, data)
+            break;
+        case 'STOCKPONIT':
+            NavigationService.navigate(ScreenName.STOCKPOINTRNSKIA, data)
             break;
         default:
             break;
@@ -52,15 +56,15 @@ const SwitchScreen = (data: any) => {
 const ChartWithRNSkia = ({ navigation, route }: any) => {
     const { id, title, type, screenName } = navigation?.state?.params;
     return (
-        <View style={StylesApp.container}>
+        <PageView>
             <HeaderApp style={{ backgroundColor: '#FF4500d9' }} title={title ?? ' Khong co tieu de'} isIconLeft />
             <FlatList
                 data={DataMultiple}
                 renderItem={({ item }) => <ItemListApp style={{ backgroundColor: '#ffdddf' }} props={item} onPress={() => { SwitchScreen(item) }} />}
                 keyExtractor={item => item.id}
-                style={{ flex: 1, marginTop: sizes._statusbar_height + sizes._header_height, width: sizes._screen_width }}
+                style={{ flex: 1, marginTop: sizes._header_height, width: sizes._screen_width }}
             />
-        </View>
+        </PageView>
     )
 }
 
@@ -68,7 +72,8 @@ export default ChartWithRNSkia
 
 export {
     DrawingsRNSkia,
-    HuesRNSkia
+    HuesRNSkia,
+    StockPointRNSkia,
 
 }
 
