@@ -252,6 +252,28 @@ android {
             }
 
         }
+        variant.outputs.all { output ->
+            def appName
+            if (project.hasProperty("applicationName")) {
+                appName = applicationName
+            } else {
+                appName = parent.name
+            }
+            def SEP = "_"
+            def buildType = variant.buildType.name
+            def version = variant.versionName
+            def versionCode = variant.versionCode
+            def date = new Date();
+            def formattedDate = date.format('yyyy_MM_dd_HH_mm')
+            def newApkName
+            if (buildType == 'release') {
+                newApkName = appName + SEP + buildType + SEP + version + SEP + versionCode + SEP+ formattedDate + ".apk"
+                //newApkName = appName + SEP + buildType + ".apk"
+            } else {
+                newApkName = appName + SEP + buildType + ".apk"
+            }
+            outputFileName = new File(newApkName)
+        }
     }
 }
 
