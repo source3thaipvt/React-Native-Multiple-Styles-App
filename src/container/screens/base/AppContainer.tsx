@@ -4,14 +4,17 @@ import { createAppContainer, createSwitchNavigator } from 'react-navigation';
 import SplashScreen from '../splash_screen/SplashScreen';
 import MultipleStylesApp from '../multiple_styles_app';
 import ChartWithRNSkia, { DrawingsRNSkia, HuesRNSkia, StockPointRNSkia } from '../chart_with_rn_skia';
+import LoginScreen from '../login_screen/LoginScreen';
 
 export enum ScreenName {
   SPLASH = 'SplashScreen',
+  LOGINSCREEN = 'LoginScreen',
   MULTIPLESTYLESAPP = 'MultipleStylesApp',
   CHARTWITHRNSKIA = 'ChartWithRNSkia',
   DRAWINGSRNSKIA = 'DrawingsRNSkia',
   HUESKIARNSKIA = 'HuesRNSkia',
-  STOCKPOINTRNSKIA = 'StockPointRNSkia'
+  STOCKPOINTRNSKIA = 'StockPointRNSkia',
+  
 }
 const AppNavigator = createCompatNavigatorFactory(createStackNavigator)(
   {
@@ -21,7 +24,7 @@ const AppNavigator = createCompatNavigatorFactory(createStackNavigator)(
     DrawingsRNSkia: { screen: DrawingsRNSkia },
     HuesRNSkia: { screen: HuesRNSkia },
     StockPointRNSkia: { screen: StockPointRNSkia },
-
+    LoginScreen: {screen: LoginScreen}
   },
   {
     headerMode: 'none',

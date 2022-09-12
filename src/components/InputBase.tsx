@@ -283,7 +283,7 @@ export default class InputBase extends Component<
                 flex: 1,
                 flexDirection: 'column',
                 justifyContent: 'center',
-                height: sizes._64sdp,
+                height: sizes._54sdp,
                 paddingHorizontal: sizes._16sdp,
               }}>
               <TextBase

@@ -1,3 +1,5 @@
+import { StringLogin } from "../../container/screens/login_screen/language/StringLogin";
+
 export default {
   connect_error:
     'Please check your internet connection or contact MB 27/7 through 1900 545426 for further support',
@@ -35,4 +37,5 @@ export default {
   string_success: 'Success',
   err_pass: 'Phone or password is not correct',
   unknown_error: 'Please try again latter.',
+  ...StringLogin.en
 };

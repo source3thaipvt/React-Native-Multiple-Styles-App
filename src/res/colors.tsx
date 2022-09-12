@@ -11,6 +11,16 @@ const colors = new (class {
   _color_black_tranparent = 'rgba(0, 0, 0, 0)';
   _color_black_tranparent_rbsheet = 'rgba(0, 0, 0, 0.47)';
 
+  _color_pink_tranparent_1 = 'rgba(255,192,203, 0.9)';
+  _color_pink_tranparent_2 = 'rgba(255,192,203, 0.8)';
+  _color_pink_tranparent_3 = 'rgba(255,192,203, 0.7)';
+  _color_pink_tranparent_4 = 'rgba(255,192,203, 0.6)';
+  _color_pink_tranparent_5 = 'rgba(255,192,203, 0.5)';
+  _color_pink_tranparent_6 = 'rgba(255,192,203, 0.4)';
+  _color_pink_tranparent_7 = 'rgba(255,192,203, 0.3)';
+  _color_pink_tranparent_8 = 'rgba(255,192,203, 0.2)';
+  _color_pink_tranparent_9 = 'rgba(255,192,203, 0.1)';
+
   _color_default_tranparent_9 = 'rgba(246,207,80, 0.9)';
   _color_default_tranparent_8 = 'rgba(246,207,80, 0.8)';
   _color_default_tranparent_7 = 'rgba(246,207,80, 0.7)';

@@ -3,5 +3,5 @@ import en from './en';
 
 export default {
   ...en,
-  ...StringLogin.vi
+  ...StringLogin.jp
 };

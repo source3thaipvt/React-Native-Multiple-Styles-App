@@ -5,10 +5,12 @@
 import {NativeModules, Platform} from 'react-native';
 import LocalizedStrings from 'react-native-localization';
 import en from './languages/en';
+import jp from './languages/jp';
 import vi from './languages/vi';
 export default new LocalizedStrings({
   vi: vi,
   en: en,
+  jp: jp
 });
 
 export function getLanguage() {
