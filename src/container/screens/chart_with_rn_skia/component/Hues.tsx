@@ -72,7 +72,7 @@ const Hues = ({ navigation, route }: any) => {
 
     return (
         <PageView>
-            <HeaderApp style={{ backgroundColor: '#FF4500d9' }} title={title ?? ' Khong co tieu de'} isIconLeft />
+            <HeaderApp title={title ?? ' Khong co tieu de'} isIconLeft />
             <Canvas style={{ flex: 1, marginTop: sizes._header_height, width: width }} onTouch={onTouch}>
                 <Fill color='lightblue' />
                 <Paint>

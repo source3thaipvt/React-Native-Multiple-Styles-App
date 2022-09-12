@@ -57,7 +57,7 @@ const LoginScreen = () => {
         }
     }
     return (
-        <PageView imageBackgroud={images.bg_image}>
+        <PageView imageBackgroud={images.bg_image} colorBackgroud={colors._color_pink_tranparent_5}>
             <View style={styles.header}>
                 <TextViewBase title={strings.login} style={styles.txt_title_header} />
                 <TouchableOpacity
@@ -104,7 +104,7 @@ const LoginScreen = () => {
                     <TextViewBase title={strings.login_fb} style={styles.txt_btn_login} />
                 </TouchableOpacity>
                 <View style={{ justifyContent: 'flex-end', flex: 1 }}>
-                    <TextViewBase title={'Development by thaipvt'} style={{ textAlign: 'center' , marginBottom:sizes._15sdp}} />
+                    <TextViewBase title={'Development by thaipvt'} style={{ textAlign: 'center', marginBottom: sizes._15sdp }} />
                 </View>
             </View>
             <ModalBase isVisible={isVisible}>
@@ -219,7 +219,6 @@ const styles = StyleSheet.create({
         borderRadius: sizes._8sdp,
         paddingVertical: sizes._12sdp
     },
-
     txt_btn_login: {
         fontSize: sizes._20sdp,
         fontWeight: '700',

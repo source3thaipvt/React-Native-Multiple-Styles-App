@@ -41,7 +41,7 @@ const StockPoints = ({ navigation, route }: any) => {
 
     return (
         <PageView>
-            <HeaderApp style={{ backgroundColor: '#FF4500d9' }} title={title ?? ' Khong co tieu de'} isIconLeft />
+            <HeaderApp title={title ?? ' Khong co tieu de'} isIconLeft />
             <Text style={{  marginTop: sizes._header_height, width: width }}>Stock Point</Text>
             {/* <Canvas style={{ flex: 1, marginTop: sizes._statusbar_height + sizes._header_height, width: width }} onTouch={onTouch}>
                 <Group>

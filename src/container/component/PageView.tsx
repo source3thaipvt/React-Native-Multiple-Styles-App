@@ -32,7 +32,7 @@ const PageView = (props: any) => {
           resizeMethod="resize"
         >
           <View style={{
-            backgroundColor: colors._color_pink_tranparent_5,
+            backgroundColor: props.colorBackgroud ?? '#ffffff',
             position: 'absolute',
             top: 0,
             right: 0,

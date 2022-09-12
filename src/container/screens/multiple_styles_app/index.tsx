@@ -24,8 +24,8 @@ const SwitchScreen = (data: any) => {
 const MultipleStylesApp = (props: any) => {
   const navigation = useNavigation();
   return (
-    <PageView>
-      <HeaderApp style={{ backgroundColor: '#FF4500d9' }} title={'Multiple Styles App'} />
+    <PageView >
+      <HeaderApp title={'Multiple Styles App'} />
       <FlatList
         data={DataMultiple}
         renderItem={({ item }) => <ItemListApp props={item} onPress={() => { SwitchScreen(item) }} />}

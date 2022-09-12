@@ -15,7 +15,7 @@ const Drawings = ({ navigation, route }: any) => {
     const logo = images.ic_back_black;
     return (
         <PageView>
-            <HeaderApp style={{ backgroundColor: '#FF4500d9' }} title={title ?? ' Khong co tieu de'} isIconLeft />
+            <HeaderApp title={title ?? ' Khong co tieu de'} isIconLeft />
             <Canvas style={{flex:1, marginTop: sizes._header_height, width:width}}>
                 <Paint style="stroke" strokeWidth={18}>
                     <RadialGradient c={vec(rcenter.x + 25, rcenter.y)} r={50} colors={['#ff89', '#00fe', '#ff0000']} />

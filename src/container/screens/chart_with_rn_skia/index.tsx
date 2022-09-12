@@ -57,10 +57,10 @@ const ChartWithRNSkia = ({ navigation, route }: any) => {
     const { id, title, type, screenName } = navigation?.state?.params;
     return (
         <PageView>
-            <HeaderApp style={{ backgroundColor: '#FF4500d9' }} title={title ?? ' Khong co tieu de'} isIconLeft />
+            <HeaderApp title={title ?? ' Khong co tieu de'} isIconLeft />
             <FlatList
                 data={DataMultiple}
-                renderItem={({ item }) => <ItemListApp style={{ backgroundColor: '#ffdddf' }} props={item} onPress={() => { SwitchScreen(item) }} />}
+                renderItem={({ item }) => <ItemListApp props={item} onPress={() => { SwitchScreen(item) }} />}
                 keyExtractor={item => item.id}
                 style={{ flex: 1, marginTop: sizes._header_height, width: sizes._screen_width }}
             />

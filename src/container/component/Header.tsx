@@ -12,16 +12,16 @@ const HeaderApp = (props: any) => {
   return (
     <View
       style={{
-        // top: sizes._statusbar_height,
+        paddingTop: sizes._statusbar_height,
         position: 'absolute',
-        height: sizes._header_height,
+        height: sizes._header_height + sizes._statusbar_height,
         width: '100%',
         flexDirection: 'row',
-        backgroundColor: props?.style?.backgroundColor ?? 'red'
+        backgroundColor: props?.style?.backgroundColor ?? '#b3e5fc'
       }}>
       {props?.isIconLeft &&
         <TouchableOpacity
-          style={{ alignSelf: 'center', position: 'absolute' }}
+          style={{ alignSelf: 'center', position: 'absolute', paddingTop: sizes._statusbar_height }}
           onPress={() => {
             if (props?.goBack) {
               props?.goBack();
@@ -34,7 +34,7 @@ const HeaderApp = (props: any) => {
             style={{
               height: sizes._45sdp,
               width: sizes._45sdp,
-              tintColor: colors._color_gray5,
+              tintColor: colors._text_white,
             }}
             resizeMode={'center'}></Image>
         </TouchableOpacity>
@@ -48,7 +48,7 @@ const HeaderApp = (props: any) => {
         <TextViewBase title={props?.title ?? ''}
           style={{
             fontSize: sizes._22sdp,
-            color: colors._color_white,
+            color: colors._text_white,
 
           }} />
       </View>

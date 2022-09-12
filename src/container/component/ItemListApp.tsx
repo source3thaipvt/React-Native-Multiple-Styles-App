@@ -9,7 +9,7 @@ const ItemListApp = (props: any) => {
         <TouchableOpacity
 
             style={[{
-                backgroundColor: '#f9c2ff',
+                backgroundColor: '#9ad9f2',
                 padding: 20,
                 marginVertical: 8,
                 marginHorizontal: 16,
@@ -20,7 +20,7 @@ const ItemListApp = (props: any) => {
             <TextViewBase title={props?.props?.title ?? 'Cai nay la rong rong va rong'}
                 style={{
                     fontSize: sizes._22sdp,
-                    color: colors._color_white,
+                    color: colors._text_white,
                 }} />
         </TouchableOpacity>
     )
