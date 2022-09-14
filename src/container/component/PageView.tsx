@@ -1,4 +1,4 @@
-import { View, Text, SafeAreaView, ImageBackground } from 'react-native'
+import { View, Text, SafeAreaView, ImageBackground, StatusBar } from 'react-native'
 import React from 'react'
 import { StylesApp } from '../../common/Constant'
 import sizes from '../../res/sizes'
@@ -12,9 +12,9 @@ const PageView = (props: any) => {
         width: '100%',
         height: '100%',
         // flex: 1,
-
         backgroundColor: '#fff',
       }}>
+        <StatusBar barStyle={'light-content'}/>
         <ImageBackground
           source={props.imageBackgroud ?? { uri: props.imageBackgroud }}
           style={{

@@ -17,7 +17,7 @@ const HeaderApp = (props: any) => {
         height: sizes._header_height + sizes._statusbar_height,
         width: '100%',
         flexDirection: 'row',
-        backgroundColor: props?.style?.backgroundColor ?? '#b3e5fc'
+        backgroundColor: props?.style?.backgroundColor ?? '#003F91'
       }}>
       {props?.isIconLeft &&
         <TouchableOpacity

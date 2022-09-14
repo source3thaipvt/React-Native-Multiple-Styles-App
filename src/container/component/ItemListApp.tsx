@@ -7,15 +7,13 @@ import colors from '../../res/colors'
 const ItemListApp = (props: any) => {
     return (
         <TouchableOpacity
-
             style={[{
                 backgroundColor: '#9ad9f2',
                 padding: 20,
                 marginVertical: 8,
                 marginHorizontal: 16,
             }, props?.style]}
-            onPress={props?.onPress}
-           
+            onPress={props?.onPress}      
         >
             <TextViewBase title={props?.props?.title ?? 'Cai nay la rong rong va rong'}
                 style={{

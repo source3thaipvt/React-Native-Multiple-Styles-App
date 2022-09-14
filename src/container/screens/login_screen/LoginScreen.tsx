@@ -43,7 +43,7 @@ const LoginScreen = () => {
     const loginWith = async (type: TypeLogin) => {
         switch (type) {
             case TypeLogin.LOGIN:
-                NavigationService.reset(ScreenName.MULTIPLESTYLESAPP)
+                NavigationService.push(ScreenName.MULTIPLESTYLESAPP)
                 break;
             case TypeLogin.FACEBOOK:
                 showToastOver('Đăng nhập với facebook', 300)
